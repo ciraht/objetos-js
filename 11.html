@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 11</title>
+</head>
+<body>
+    <script>
+        const Garrafa = {
+            tamanho_cm: 40,
+            raio_cm: 5,
+            capacidade_ml: 500,
+            cheia: 0,
+            tampada: 1,
+            cor: 'transparente',
+            abrir(){
+                tampada: 0
+            },
+            encher(){
+                if (this.tampada==0){
+                    this.cheia = 1
+                } 
+            },
+            beber(){
+                if(this.cheia == 1){
+                    alert('glub glub glub')
+                    this.cheia = 0
+                }
+            },
+            agua: {
+                pureza: 100,
+                ph: 7,
+                cor: 'cristalina',
+            }
+        }
+    </script>
+</body>
+</html>

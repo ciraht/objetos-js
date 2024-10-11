@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 10</title>
+</head>
+<body>
+    <script>
+        maior = 0
+        nome = ''
+        let lista = []
+        const pessoa1 = {
+            nome:'joão',
+            idade:12
+        }
+        const pessoa2 = {
+            nome:'maria',
+            idade:52
+        }
+        const pessoa3 = {
+            nome:'josé',
+            idade:28
+        }
+        lista.push(pessoa1)
+        lista.push(pessoa2)
+        lista.push(pessoa3)
+
+        function velho(lista) {
+            for (i in lista){
+                if (lista[i].idade > maior){
+                    maior = lista[i].idade
+                    nome = lista[i].nome
+                }
+            }
+        return nome
+        }
+        const maisVelho = velho(lista)
+        console.log(maisVelho)
+    </script>
+</body>
+</html>
